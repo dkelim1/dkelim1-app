@@ -8,8 +8,8 @@ spec:
   containers:
   - name: kaniko
     image: gcr.io/kaniko-project/executor:debug
-    args: ["--context=git://github.com/vfarcic/kaniko-demo",
-            "--destination=dkelim1/dockers:kaniko"]
+    args: ["--context=git://github.com/dkelim1/dkelim1-app",
+            "--destination=dkelim1/dockers-app:one"]
     volumeMounts:
       - name: kaniko-secret
         mountPath: /kaniko/.docker
