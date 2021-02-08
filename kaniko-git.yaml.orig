@@ -9,7 +9,8 @@ spec:
 #   image: gcr.io/kaniko-project/executor:debug
     image: gcr.io/kaniko-project/executor:v0.16.0
     args: ["--context=git://github.com/dkelim1/dkelim1-app",
-           "--no-push"]
+            "--destination=dkelim1/kaniko-demo",
+            "--no-push"]
     volumeMounts:
       - name: kaniko-secret
         mountPath: /kaniko/.docker
