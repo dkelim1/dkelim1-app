@@ -7,4 +7,4 @@ COPY --from=build-env /go/bin/sample /app/sample
 
 EXPOSE 8080
 #CMD ["/app/sample"]
-CMD ["sleep 3600"]
+CMD ["sleep 3600000"]
